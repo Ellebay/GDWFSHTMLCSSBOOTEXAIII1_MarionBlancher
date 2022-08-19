@@ -1,0 +1,164 @@
+/* -------- Variables Style -------- */
+$font-stack: "Gill Sans", sans-serif;
+$font-size: 16px;
+$primary-background: #fee5dd;
+$secondary-background: #f26363;
+$primary-color: #202020;
+$secondary-color: #fee5dd;
+$active-color: #f26363;
+$disabled-color:#0000006a;
+$small-color: #362f2d;
+$box-shadow-custom: 0 0px 4px 1px #f2636366;
+
+/* -------- Body Style -------- */
+body {
+  font: 100% $font-stack;
+  background: $primary-background;
+  color: $primary-color;
+  .muted {
+    color: $disabled-color;   
+    }
+}
+
+/* -------- Navigation Style -------- */
+.navbar-custom {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    .navbar-nav {
+       > li {
+          >  a {
+                color: $primary-color;
+            }
+        }
+        .active{
+            color: $active-color;
+        }
+        .disabled{
+            color: $disabled-color;
+        }
+        .dropdown-menu {
+            color: $disabled-color;   
+         }
+    }
+    .navbar-text{
+        .active{
+            color: $active-color;
+        }
+    }
+}
+
+/* -------- Banner Style -------- */
+.banner {
+    background-color: $secondary-background;
+    text-align: center;
+    color: $secondary-color;
+    font-size: 20px;
+}
+
+/* -------- Buttons Style -------- */
+.btn-custom{
+    @extend .banner;
+    font-size: $font-size;
+    margin-top: 15px;
+    &:hover{
+        color: $active-color;
+        border-color: $active-color;
+    }
+}
+
+/* -------- Cards Style -------- */
+.card{
+    background:$primary-background;
+    box-shadow: $box-shadow-custom;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s 
+    -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: $box-shadow-custom
+    }
+    .card-ul{
+        font-size: 14px;
+        color: $small-color
+    }
+}
+
+/* -------- A Propos Style -------- */
+.a-propos{
+    .border-custom{
+        border-bottom: solid 2px $active-color;
+    }
+    .avatar {
+        border-radius: 100px;
+        background-color: $secondary-background;
+        width: 170px;
+        height: 170px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* -------- Footer Style -------- */
+footer {
+background-color: $secondary-background;
+color: $secondary-color;
+    .menu {
+        >li {
+            >a {
+                color: $secondary-color;
+                &:hover {
+                    color: $small-color
+                }
+            }
+        }
+    }
+
+    .img-footer {
+        width: 300vw; 
+        height: auto;
+    }
+}
+
+/* -------- Contact Form Style -------- */
+.contact{
+    background:$primary-background;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $box-shadow-custom;
+    width: 80vh; 
+    height: auto;
+
+    label{
+        padding: 5px;
+    }
+    .form-control{
+        border-radius: 10px;
+        background:$primary-background;
+        border-color: $active-color;
+        &:focus{
+            background: #f9f0ee;
+            border-color: $active-color;
+            box-shadow: $box-shadow-custom
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact{
+        width: auto; 
+        height: auto;
+    }
+
+    footer{
+        .img-footer{
+            width: auto; 
+            height: auto;
+        }
+    }
+    
+}
