@@ -1,0 +1,133 @@
+/* -------- Variables Style -------- */
+/* -------- Body Style -------- */
+body {
+  font: 100% "Gill Sans", sans-serif;
+  background: #fee5dd;
+  color: #202020;
+}
+body .muted {
+  color: rgba(0, 0, 0, 0.4156862745);
+}
+
+/* -------- Navigation Style -------- */
+.navbar-custom {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #202020;
+}
+.navbar-custom .navbar-nav .active {
+  color: #f26363;
+}
+.navbar-custom .navbar-nav .disabled {
+  color: rgba(0, 0, 0, 0.4156862745);
+}
+.navbar-custom .navbar-nav .dropdown-menu {
+  color: rgba(0, 0, 0, 0.4156862745);
+}
+.navbar-custom .navbar-text .active {
+  color: #f26363;
+}
+
+/* -------- Banner Style -------- */
+.banner, .btn-custom {
+  background-color: #f26363;
+  text-align: center;
+  color: #fee5dd;
+  font-size: 20px;
+}
+
+/* -------- Buttons Style -------- */
+.btn-custom {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.btn-custom:hover {
+  color: #f26363;
+  border-color: #f26363;
+}
+
+/* -------- Cards Style -------- */
+.card {
+  background: #fee5dd;
+  box-shadow: 0 0px 4px 1px rgba(242, 99, 99, 0.4);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 4px 1px rgba(242, 99, 99, 0.4);
+}
+.card .card-ul {
+  font-size: 14px;
+  color: #362f2d;
+}
+
+/* -------- A Propos Style -------- */
+.a-propos .border-custom {
+  border-bottom: solid 2px #f26363;
+}
+.a-propos .avatar {
+  border-radius: 100px;
+  background-color: #f26363;
+  width: 170px;
+  height: 170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------- Footer Style -------- */
+footer {
+  background-color: #f26363;
+  color: #fee5dd;
+}
+footer .menu > li > a {
+  color: #fee5dd;
+}
+footer .menu > li > a:hover {
+  color: #362f2d;
+}
+footer .img-footer {
+  width: 300vw;
+  height: auto;
+}
+
+/* -------- Contact Form Style -------- */
+.contact {
+  background: #fee5dd;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0px 4px 1px rgba(242, 99, 99, 0.4);
+  width: 80vh;
+  height: auto;
+}
+.contact label {
+  padding: 5px;
+}
+.contact .form-control {
+  border-radius: 10px;
+  background: #fee5dd;
+  border-color: #f26363;
+}
+.contact .form-control:focus {
+  background: #f9f0ee;
+  border-color: #f26363;
+  box-shadow: 0 0px 4px 1px rgba(242, 99, 99, 0.4);
+}
+
+@media (max-width: 576px) {
+  .contact {
+    width: auto;
+    height: auto;
+  }
+  footer .img-footer {
+    width: auto;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
