@@ -21,6 +21,43 @@
   </head>
 
   <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logoFinal.svg" width="200vw" class="img-fluid" alt="Logo Les Festivaliers">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Actualités</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="dropdownMenuLink" href="#" role="button" 
+              aria-expanded="false">Programmation</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="programmation_france.html">Festivals - France</a></li>
+                <li><a class="dropdown-item disabled" href="#">Festivals - Europe</a></li>
+                <li><a class="dropdown-item disabled" href="#">Festivals - Monde</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Billeterie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="a_propos.html">A Propos</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </span>
+        </div>
+      </div>
+    </nav>
 
     <!-- Bootstrap JS -->
     <script
