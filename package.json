@@ -1,0 +1,20 @@
+{
+  "name": "evaluation01_html_css_bootstrap",
+  "version": "1.0.0",
+  "description": "/* GDWFSHTMLCSSBOOTEXAIII1A_Marion_Blancher: Evaluation d'entraînement: Créer un site web avec HTML, CSS et Bootstrap - 19.08.2022 */",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellebay/GDWFSHTMLCSSBOOTEXAIII1_MarionBlancher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellebay/GDWFSHTMLCSSBOOTEXAIII1_MarionBlancher/issues"
+  },
+  "homepage": "https://github.com/Ellebay/GDWFSHTMLCSSBOOTEXAIII1_MarionBlancher#readme"
+}
